@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .primary-button {
+    @apply border-myGrey-900 px-10 py-4 border uppercase text-xxs tracking-wider hover:bg-myGrey-900 hover:text-white transition-all;
+  }
+  .secondary-button {
+    @apply text-xxs border uppercase text-white py-4 px-10 border-myBlue-700 bg-myBlue-700 hover:bg-myCyan-500 hover:border-myCyan-500 disabled:bg-myGrey-300 disabled:border-myGrey-300 transition-all;
+  }
+  .menu-button {
+    @apply py-6 border-b-4 border-myCyan-500 flex-center cursor-pointer hover:bg-myGrey-700 hover:border-myGrey-700;
+  }
+  .menu {
+    @apply absolute right-10 top-20 w-1/2 bg-myGrey-900 border-collapse z-50;
+  }
+  .hero-psuedo {
+    @apply absolute bottom-0 left-0 w-9/12 bg-white lg:w-7/12 xl:w-4/12;
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex flex-col items-center justify-center;
+  }
+  .content-container {
+    @apply mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto;
+  }
+  .section-border-y-grey {
+    @apply border-t border-b border-myGrey-300;
+  }
+  .heading-text {
+    @apply text-lg font-serif font-bold;
+  }
+  .heading-text-thin {
+    @apply text-lg font-serif;
+  }
+  .heading-text-thin-md {
+    @apply text-md font-serif;
+  }
+  .normal-text {
+    @apply text-xs font-sans leading-7;
+  }
+  .medium-text {
+    @apply text-sm font-sans leading-7;
+  }
+  .accent-text {
+    @apply text-xs text-myCyan-500 font-sans leading-8 xl:leading-10  font-bold;
+  }
+  .link-text {
+    @apply uppercase text-white text-xxs font-sans;
+  }
+  .input {
+    @apply bg-gray-200 w-full p-3 mb-6 focus:outline-none focus:ring-myCyan-500 focus:ring-2;
+    font-size: 13px;
+  }
+  .input-label {
+    @apply font-bold leading-8;
+    font-size: 13px;
+  }
+  .error-outline {
+    @apply ring-myRed-600 ring-2;
+  }
+  .form-error-text {
+    @apply text-red-600 text-xs;
+  }
+  @media (min-width: 1110px) {
+    .xl-H-500px {
+      height: 500px;
+    }
+  }
+}
+/*# sourceMappingURL=global.css.map */
